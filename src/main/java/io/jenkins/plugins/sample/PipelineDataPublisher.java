@@ -47,6 +47,11 @@ public class PipelineDataPublisher extends RunListener<Run<?, ?>> {
             listener.getLogger().println("Authentication token not found for key: dx_token");
             return;
         }
+        String path = credentialManager.getSecretToken("dx_path");
+        if (path == null) {
+            listener.getLogger().println("Authentication token not found for key: dx_path");
+            return;
+        }
 
         // Print extracted data
         listener.getLogger().println("Sending run data to DX:");
@@ -58,7 +63,7 @@ public class PipelineDataPublisher extends RunListener<Run<?, ?>> {
         listener.getLogger().println("status: " + status);
 
         DxDataSender.sendData(
-                "http://localhost:3000/api/pipelineRuns.notify",
+                path + "/api/pipelineRuns.notify",
                 "{" + "\"pipeline_name\": \""
                         + jobName + "\"," + "\"pipeline_source\": \"Jenkins\","
                         + "\"reference_id\": \""
