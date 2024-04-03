@@ -4,9 +4,16 @@
 
 This plugin is intended for customers of DX (https://getdx.com/). It shares Jenkins build data with DX.
 
+To run this plugin locally:
+- `mvn hpi:run -Dport=5000`
+- Navigate to http://localhost:5000/jenkins
+
+To generate a *.hpi file:
+- `mvn package`
+
 ## Getting started
 ### Installing the Plugin
-- Download the plugin (*.hpi file) and put it in the following directory: <jenkinsHome>/plugins/
+- Download or generate the plugin (*.hpi file) and put it in the following directory: <jenkinsHome>/plugins/
 - restart Jenkins
 
 ### Adding Your DX API Key to Jenkins
