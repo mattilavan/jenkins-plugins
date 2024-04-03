@@ -2,7 +2,7 @@
 
 ## Introduction
 
-TODO Describe what your plugin does here
+This plugin is intended for customers of DX (https://getdx.com/). It shares Jenkins build data with DX.
 
 ## Getting started
 ### Installing the Plugin
@@ -42,14 +42,11 @@ configuration-as-code examples.
 
 ## Issues
 
-TODO Decide where you're going to host your issues, the default is Jenkins JIRA, but you can also enable GitHub issues,
-If you use GitHub issues there's no need for this section; else add the following line:
-
 Report issues and enhancements in the [Jenkins issue tracker](https://issues.jenkins.io/).
 
 ## Contributing
 
-TODO review the default [CONTRIBUTING](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md) file and make sure it is appropriate for your plugin, if not then add your own one adapted from the base file
+[CONTRIBUTING](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md)
 
 Refer to our [contribution guidelines](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md)
 
