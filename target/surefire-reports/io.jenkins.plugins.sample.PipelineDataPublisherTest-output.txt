@@ -1,0 +1,24 @@
+=== Starting testOnCompleted(io.jenkins.plugins.sample.PipelineDataPublisherTest)
+   0.135 [id=19]	INFO	o.jvnet.hudson.test.WarExploder#explode: Picking up existing exploded jenkins.war at /Users/matt/jenkins/jenkins-plugins/target/jenkins-for-test
+   0.426 [id=19]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51586/jenkins/
+   0.722 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   1.180 [id=35]	INFO	hudson.PluginManager#considerDetachedPlugin: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins659825571438918818/plugins/mina-sshd-api-common.jpi
+   1.207 [id=35]	INFO	hudson.PluginManager#considerDetachedPlugin: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins659825571438918818/plugins/mina-sshd-api-core.jpi
+   1.234 [id=35]	INFO	hudson.PluginManager#considerDetachedPlugin: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins659825571438918818/plugins/sshd.jpi
+   1.252 [id=35]	INFO	hudson.PluginManager#considerDetachedPlugin: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins659825571438918818/plugins/javax-activation-api.jpi
+   1.280 [id=35]	INFO	hudson.PluginManager#considerDetachedPlugin: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins659825571438918818/plugins/javax-mail-api.jpi
+   1.501 [id=33]	INFO	hudson.PluginManager#considerDetachedPlugin: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins659825571438918818/plugins/jaxb.jpi
+   1.543 [id=33]	INFO	hudson.PluginManager#considerDetachedPlugin: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins659825571438918818/plugins/trilead-api.jpi
+   2.016 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   2.033 [id=33]	INFO	j.b.api.BouncyCastlePlugin#start: /Users/matt/jenkins/jenkins-plugins/target/tmp/j h2930158736624572331/plugins/bouncycastle-api/WEB-INF/optional-lib not found; for non RealJenkinsRule this is fine and can be ignored.
+   3.297 [id=34]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   3.311 [id=34]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   3.312 [id=34]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   4.901 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+   4.902 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+   4.902 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   4.911 [id=31]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+   5.052 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   7.562 [id=19]	INFO	hudson.lifecycle.Lifecycle#onStatusUpdate: Stopping Jenkins
+  12.679 [id=19]	INFO	hudson.lifecycle.Lifecycle#onStatusUpdate: Jenkins stopped
+  12.771 [id=19]	INFO	o.j.h.t.TemporaryDirectoryAllocator#dispose: deleting /Users/matt/jenkins/jenkins-plugins/target/tmp/j h2930158736624572331

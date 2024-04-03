@@ -1,0 +1,5 @@
+io/jenkins/plugins/sample/CredentialUtil.class
+META-INF/annotations/hudson.Extension.txt
+io/jenkins/plugins/sample/DxDataSender.class
+io/jenkins/plugins/sample/PipelineDataPublisher.class
+META-INF/annotations/hudson.Extension
