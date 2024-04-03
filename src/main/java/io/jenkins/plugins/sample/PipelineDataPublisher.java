@@ -5,11 +5,17 @@ import hudson.model.Result;
 import hudson.model.Run;
 import hudson.model.TaskListener;
 import hudson.model.listeners.RunListener;
+import java.util.UUID;
 import javax.annotation.Nonnull;
 import jenkins.model.Jenkins;
 
 @Extension
 public class PipelineDataPublisher extends RunListener<Run<?, ?>> {
+
+    public static String generateUUID() {
+        UUID uuid = UUID.randomUUID();
+        return uuid.toString();
+    }
 
     @Override
     public void onCompleted(Run<?, ?> run, @Nonnull TaskListener listener) {
@@ -22,10 +28,9 @@ public class PipelineDataPublisher extends RunListener<Run<?, ?>> {
         }
 
         // prepare data
-        String instanceId = jenkins.getLegacyInstanceId();
         String jobName = run.getParent().getFullName();
         String id = run.getId();
-        String referenceId = "Jenkins/" + instanceId + "/" + jobName + "/" + id;
+        String referenceId = generateUUID();
         Integer startTime = (int) (run.getStartTimeInMillis() / 1000);
         Integer duration = (int) (run.getDuration() / 1000);
         Integer finishTime = startTime + duration;
@@ -36,9 +41,6 @@ public class PipelineDataPublisher extends RunListener<Run<?, ?>> {
         } else {
             status = "unknown";
         }
-
-        // Assuming SCM info can be directly extracted (might need adjustments)
-        String repoName = "repository information requires SCM-specific handling";
 
         // Fetch Api Key
         CredentialUtil credentialManager = new CredentialUtil();
