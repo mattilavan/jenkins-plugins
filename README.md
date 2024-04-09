@@ -13,7 +13,7 @@ To generate a *.hpi file:
 
 ## Getting started
 ### Installing the Plugin
-- Download or generate the plugin (*.hpi file) and put it in the following directory: <jenkinsHome>/plugins/
+- Download or generate the plugin (*.hpi file) and put it in the following directory: {jenkins_Home}/plugins/
 - restart Jenkins
 
 ### Adding Your DX API Key to Jenkins
